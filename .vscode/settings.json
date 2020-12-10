@@ -1,0 +1,66 @@
+{
+    "emmet.includeLanguages": {
+        "javascript":"javascriptreact"
+    },
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#1f6fd0",
+        "activityBar.activeBorder": "#ee90bb",
+        "activityBar.background": "#1f6fd0",
+        "activityBar.foreground": "#e7e7e7",
+        "activityBar.inactiveForeground": "#e7e7e799",
+        "activityBarBadge.background": "#ee90bb",
+        "activityBarBadge.foreground": "#15202b",
+        "statusBar.background": "#1857a4",
+        "statusBar.foreground": "#e7e7e7",
+        "statusBarItem.hoverBackground": "#1f6fd0",
+        "titleBar.activeBackground": "#1857a4",
+        "titleBar.activeForeground": "#e7e7e7",
+        "titleBar.inactiveBackground": "#1857a499",
+        "titleBar.inactiveForeground": "#e7e7e799",
+        "editor.selectionBackground": "#0a5800",
+        "editor.selectionHighlightBackground": "#8f0000",
+        "editorOverviewRuler.selectionHighlightForeground": "#0a5800",
+        "editorCursor.foreground": "#ffffff",
+        "editor.findMatchBackground": "#00cc44a8",
+        "editor.findMatchHighlightBackground": "#ff7b00a1",
+        "numbersBookmarks.lineBackground": "#007700",
+        "editor.wordHighlightBackground": "#0e6306"
+    },
+    "peacock.color": "#1857a4",
+    "npm-scripts.showStartNotification": false,
+    "editor.tokenColorCustomizations": {
+
+        "textMateRules": [
+            {
+                "scope": "entity.name.tag support.class.component",
+                "settings": {
+                    "foreground": "#43c7a6"
+                },
+                
+      
+
+            },{
+                "scope": "string.unquoted",
+                "settings": {
+                    "foreground": "#FFCB6B"
+                },
+            },
+            {
+                "scope": "variable.name",
+                "settings": {
+                    "foreground": "#487df0"
+                },
+            },
+            {
+                "scope": "meta.function-call",
+                "settings": {
+                    "foreground": "#43c7a6"
+                },
+            }
+         
+        ]
+    
+        },
+
+
+}
