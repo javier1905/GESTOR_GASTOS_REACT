@@ -10,6 +10,7 @@ import Auth from './COMPONENT/AUTH/auth'
 import Home from './COMPONENT/HOME/home'
 
 import DashboardCategories from './COMPONENT/DASHBOARD_CATEGORIES/dashboardCategories'
+import DashboardOperations from './COMPONENT/DASHBOARD_OPERATIONS/dashboardOperations'
 
 import './app.css'
 
@@ -31,6 +32,11 @@ const App = () => {
 						<Route path='/home'>
 							<Auth>
 								<Home />
+							</Auth>
+						</Route>
+						<Route path='/operations'>
+							<Auth>
+								<DashboardOperations />
 							</Auth>
 						</Route>
 						<Route path='/category'>

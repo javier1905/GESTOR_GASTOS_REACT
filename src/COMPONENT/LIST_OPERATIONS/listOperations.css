@@ -1,0 +1,30 @@
+.container_listOperations {
+	padding: 30px 0px;
+	overflow-x: auto;
+}
+#table_operations {
+	margin-left: auto;
+	margin-right: auto;
+	background: #ffffff;
+	padding: 20px 20px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.5);
+}
+#table_operations thead {
+}
+#table_operations td {
+	padding: 10px;
+}
+#table_operations tbody tr td button {
+	outline: none;
+	border: none;
+	width: 20px;
+	height: 20px;
+}
+#table_operations tbody tr td button:hover {
+	cursor: pointer;
+}
+#table_operations td button svg {
+	width: 100%;
+	height: 100%;
+}
