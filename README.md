@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+## APLICACION WEB - GESTOR DE GASTOS (REACT JS)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Es una aplicacion echa en react js para gestionar los gastos diarios se pueden clasificar por categoria cuenta con un dashboard donde de ve el resumen de tus gastos, cada usuario lleva sus gastos de forma independiente , cuenta con un sistema se usuarios donde te permite registrar y listo, logueandote podes acceder a todas la funcionalidades 
 
-## Available Scripts
 
-In the project directory, you can run:
+------------
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### DEPENDENCIAS
 
-### `npm test`
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-brands-svg-icons": "^5.15.1",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.12",
+    "@testing-library/jest-dom": "^5.11.5",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "axios": "^0.21.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-favicon": "^2.0.1",
+    "moment": "^2.29.1",
+    "path": "^0.12.7",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-redux": "^7.2.2",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.0",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.3.0",
+    "universal-cookie": "^4.0.4",
+    "web-vitals": "^0.2.4"
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+###INSTALACION 
 
-### `npm run build`
+###### ASEGURARSE DE TENER INTALADO NODE JS EN SU PC
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Clone el repositorio en su pc
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+`$ git clone https://github.com/javier1905/GESTOR_GASTOS_REACT.git `
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+instale todas las dependecias con el comando
 
-### `npm run eject`
+`$npm i`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Asegurese de que la api corra en el puerto 5000 sino cambiele el puesto que se encuentra en el archivo .env
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+y por ultimo ejecute el comando para ejecutarlo en modo desarrollo
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+`$ npm run dev `
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+corre en el puerto 3000
 
-## Learn More
+y para ejecutarlo en modo produccion
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+`$ npm run build`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+y
 
-### Code Splitting
+`$npm start`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+##GALERIA
 
-### Analyzing the Bundle Size
+Login
+![](https://res.cloudinary.com/dilbxcsyo/image/upload/v1607641068/gestor_gastos_login_u6duuo.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Dashboard
 
-### Making a Progressive Web App
+![](https://res.cloudinary.com/dilbxcsyo/image/upload/v1607641177/gestor_gastos_home_jhk3fq.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Operaciones
 
-### Advanced Configuration
+![](https://res.cloudinary.com/dilbxcsyo/image/upload/v1607641273/gestor_gastos_operaciones_fwkte8.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Alta operacion
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![](https://res.cloudinary.com/dilbxcsyo/image/upload/v1607641372/gestor_gastos_altaOperacion_sjmonu.png)
