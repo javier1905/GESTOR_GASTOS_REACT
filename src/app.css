@@ -14,3 +14,6 @@ body {
 	font-size: 16px;
 	background: rgb(240, 237, 237);
 }
+.stopScroll {
+	overflow: hidden;
+}
