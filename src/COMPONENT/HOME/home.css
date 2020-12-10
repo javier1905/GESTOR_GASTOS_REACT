@@ -1,0 +1,23 @@
+.container_home {
+	width: 100%;
+	text-align: center;
+	padding-top: 30px;
+	font-size: 16px;
+}
+.balace_actual {
+	border-radius: 10px;
+	width: fit-content;
+	margin: 0em auto 0em auto;
+	padding: 1.25em 2rem;
+	background: #ffffff;
+	box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.5);
+}
+.balace_actual svg {
+	width: 3.125em !important;
+	height: 3.125em !important;
+	color: rgb(46, 148, 90);
+}
+.balace_actual h3 {
+	font-size: 3.125em;
+	font-weight: bold;
+}

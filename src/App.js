@@ -6,6 +6,8 @@ import store from './REDUX/store'
 import Main from './COMPONENT/MAIN/main'
 import Login from './COMPONENT/LOGIN/login'
 import SignUp from './COMPONENT/SIGNUP/signUp'
+import Auth from './COMPONENT/AUTH/auth'
+import Home from './COMPONENT/HOME/home'
 
 import './app.css'
 
@@ -23,6 +25,11 @@ const App = () => {
 						</Route>
 						<Route path='/signup'>
 							<SignUp />
+						</Route>
+						<Route path='/home'>
+							<Auth>
+								<Home />
+							</Auth>
 						</Route>
 					</Switch>
 				</Router>
