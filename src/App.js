@@ -3,14 +3,15 @@ import { Provider } from 'react-redux'
 
 import store from './REDUX/store'
 
+import Menu from './COMPONENT/MENU/menu'
 import Main from './COMPONENT/MAIN/main'
+import Home from './COMPONENT/HOME/home'
 import Login from './COMPONENT/LOGIN/login'
 import SignUp from './COMPONENT/SIGNUP/signUp'
-import Auth from './COMPONENT/AUTH/auth'
-import Home from './COMPONENT/HOME/home'
 
-import DashboardCategories from './COMPONENT/DASHBOARD_CATEGORIES/dashboardCategories'
 import DashboardOperations from './COMPONENT/DASHBOARD_OPERATIONS/dashboardOperations'
+import DashboardCategories from './COMPONENT/DASHBOARD_CATEGORIES/dashboardCategories'
+import Auth from './COMPONENT/AUTH/auth'
 
 import './app.css'
 
@@ -19,6 +20,8 @@ const App = () => {
 		<>
 			<Provider store={store}>
 				<Router>
+					<div className='margint_top'></div>
+					<Menu />
 					<Switch>
 						<Route exact path='/'>
 							<Main />

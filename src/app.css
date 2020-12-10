@@ -17,3 +17,11 @@ body {
 .stopScroll {
 	overflow: hidden;
 }
+.margint_top {
+	height: 3.9375rem;
+}
+@media screen and (min-width: 650px) {
+	.margint_top {
+		height: 4.875rem;
+	}
+}
