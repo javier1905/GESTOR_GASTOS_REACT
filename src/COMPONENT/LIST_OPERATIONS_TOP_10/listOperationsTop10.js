@@ -1,4 +1,5 @@
 import moment from 'moment'
+import PropTypes from 'prop-types'
 
 import './listOperationsTop10.css'
 
@@ -42,3 +43,7 @@ const ListOperationsTop10 = ({ listOperations }) => {
 }
 
 export default ListOperationsTop10
+
+ListOperationsTop10.propTypes = {
+	listOperations: PropTypes.array.isRequired,
+}

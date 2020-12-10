@@ -1,4 +1,5 @@
 import { memo } from 'react'
+import PropTypes from 'prop-types'
 
 import './listCategories.css'
 import Category from '../CATEGORY/category'
@@ -36,3 +37,7 @@ const ListCategories = memo(({ listCategories, refreshListCategories }) => {
 })
 
 export default ListCategories
+
+ListCategories.propTypes = {
+	listCategories: PropTypes.array,
+}

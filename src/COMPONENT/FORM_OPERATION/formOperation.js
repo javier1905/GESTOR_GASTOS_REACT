@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import { useHistory } from 'react-router-dom'
 import moment from 'moment'
+import PropTypes from 'prop-types'
 
 import { saveOperation, updateOperation } from '../../SERVICE/service'
 import { showAlert } from '../ALERT/alert'
@@ -181,3 +182,15 @@ const FormOperation = ({ operation, closeModal, show, refreshListOperations, lis
 }
 
 export default FormOperation
+
+FormOperation.propTypes = {
+	operation: PropTypes.shape({
+		idOperacion: PropTypes.number,
+		fechaOperacion: PropTypes.string,
+		conceptoOperacion: PropTypes.string,
+		montoOperacion: PropTypes.number,
+		tipoOperacion: PropTypes.bool,
+		descripcionCategoria: PropTypes.string,
+	}),
+	listCategorias: PropTypes.array.isRequired,
+}

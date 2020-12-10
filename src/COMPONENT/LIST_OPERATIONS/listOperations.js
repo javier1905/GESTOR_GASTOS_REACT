@@ -1,27 +1,11 @@
-import { memo, useEffect, useState } from 'react'
-import { useSelector } from 'react-redux'
-import { useHistory } from 'react-router-dom'
+import { memo } from 'react'
+import PropTypes from 'prop-types'
 
 import Operation from '../OPERATION/operation'
-import { getListCategories } from '../../SERVICE/service'
 
 import './listOperations.css'
 
-const ListOperations = memo(({ listOperations, refreshListOperations }) => {
-	const [listCategorias, setlistCategorias] = useState([])
-	const userLogin = useSelector(state => state.userLogin)
-
-	const history = useHistory()
-
-	useEffect(() => {
-		;(async () => {
-			const result = await getListCategories(userLogin.idUsuario)
-
-			if (result.data.logOK === false) return history.push('/login')
-			if (result.data.opOK) setlistCategorias(result.data.listCategorias)
-		})()
-	}, [userLogin, history])
-
+const ListOperations = memo(({ listOperations, listCategorias, refreshListOperations }) => {
 	return (
 		<div className='container_listOperations'>
 			<table id='table_operations'>
@@ -59,3 +43,8 @@ const ListOperations = memo(({ listOperations, refreshListOperations }) => {
 })
 
 export default ListOperations
+
+ListOperations.propTypes = {
+	listOperations: PropTypes.array.isRequired,
+	listCategorias: PropTypes.array.isRequired,
+}

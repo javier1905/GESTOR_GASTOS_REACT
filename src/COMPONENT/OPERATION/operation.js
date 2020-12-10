@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPencilAlt, faTrash } from '@fortawesome/free-solid-svg-icons'
 import { useHistory } from 'react-router-dom'
 import moment from 'moment'
+import PropTypes from 'prop-types'
 
 import Modal from '../MODAL/modal'
 import useModal from '../MODAL/useModal'
@@ -10,7 +11,7 @@ import FormOperation from '../FORM_OPERATION/formOperation'
 import { deleteOperation } from '../../SERVICE/service'
 import { showAlert } from '../ALERT/alert'
 
-const Operation = memo(({ operation, refreshListOperations }) => {
+const Operation = memo(({ operation, refreshListOperations, listCategorias }) => {
 	const [show, openModal, closeModal] = useModal(false)
 
 	const history = useHistory()
@@ -18,7 +19,6 @@ const Operation = memo(({ operation, refreshListOperations }) => {
 	const handleUpdateOperation = e => openModal()
 
 	const handleRemoveOperation = e => {
-		console.log('ando')
 		;(async () => {
 			const result = await deleteOperation(operation.idOperacion)
 
@@ -28,7 +28,6 @@ const Operation = memo(({ operation, refreshListOperations }) => {
 				refreshListOperations()
 			} else showAlert('error', result.data.message)
 		})()
-		// deleteCategory(category.idCategoria)
 	}
 
 	return (
@@ -54,6 +53,7 @@ const Operation = memo(({ operation, refreshListOperations }) => {
 						closeModal={closeModal}
 						operation={operation}
 						refreshListOperations={refreshListOperations}
+						listCategorias={listCategorias}
 					/>
 				</Modal>
 			</td>
@@ -62,3 +62,15 @@ const Operation = memo(({ operation, refreshListOperations }) => {
 })
 
 export default Operation
+
+Operation.propTypes = {
+	operation: PropTypes.shape({
+		idOperacion: PropTypes.number,
+		fechaOperacion: PropTypes.string,
+		conceptoOperacion: PropTypes.string,
+		montoOperacion: PropTypes.number,
+		tipoOperacion: PropTypes.bool,
+		descripcionCategoria: PropTypes.string,
+	}).isRequired,
+	listCategorias: PropTypes.array.isRequired,
+}

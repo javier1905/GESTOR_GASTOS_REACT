@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import { useHistory } from 'react-router-dom'
+import PropTypes from 'prop-types'
 
 import { saveCategory, updateCategory } from '../../SERVICE/service'
 import { showAlert } from '../ALERT/alert'
@@ -69,3 +70,10 @@ const FormCategory = ({ category, closeModal, show, refreshListCategories }) => 
 }
 
 export default FormCategory
+
+FormCategory.propTypes = {
+	category: PropTypes.shape({
+		idCategoria: PropTypes.number,
+		descripcionCategorias: PropTypes.string,
+	}),
+}
