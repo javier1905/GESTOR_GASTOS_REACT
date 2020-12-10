@@ -9,6 +9,8 @@ import SignUp from './COMPONENT/SIGNUP/signUp'
 import Auth from './COMPONENT/AUTH/auth'
 import Home from './COMPONENT/HOME/home'
 
+import DashboardCategories from './COMPONENT/DASHBOARD_CATEGORIES/dashboardCategories'
+
 import './app.css'
 
 const App = () => {
@@ -29,6 +31,11 @@ const App = () => {
 						<Route path='/home'>
 							<Auth>
 								<Home />
+							</Auth>
+						</Route>
+						<Route path='/category'>
+							<Auth>
+								<DashboardCategories />
 							</Auth>
 						</Route>
 					</Switch>
